@@ -2,7 +2,6 @@ package com.codingchallenge.codingchallenge.service;
 
 import static org.junit.Assert.assertTrue;
 
-import java.io.FileNotFoundException;
 import java.sql.SQLException;
 
 import org.junit.Test;
@@ -16,9 +15,9 @@ public class EventServiceImplTest {
 	 */
 	@Test
 	public void createTable() {
-		EventServiceImpl serviceImpl=new EventServiceImpl();
+		EventServiceImpl serviceImpl = new EventServiceImpl();
 		Integer result = serviceImpl.createTableIfNotExist();
-		assertTrue(result==0 || result==1);
+		assertTrue(result==0);
 	}
 
 	/**
@@ -27,7 +26,7 @@ public class EventServiceImplTest {
 	 */
 	@Test
 	public void insertRecord() throws SQLException {
-		EventServiceImpl serviceImpl=new EventServiceImpl();
+		EventServiceImpl serviceImpl = new EventServiceImpl();
 		Integer result = serviceImpl.insertRecord("1",5,"APPLICATION_LOG","12334",true);
 		assertTrue(result==1);
 	}

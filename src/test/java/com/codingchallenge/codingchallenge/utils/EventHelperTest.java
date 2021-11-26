@@ -49,7 +49,6 @@ public class EventHelperTest {
 		String filePath = System.getProperty("user.dir") + "/src/main/resources";
 		File logFile = EventHelper.verifyPath(filePath);
 		Map<String, Map<String, Object>> eventMap = EventHelper.parseJsonToObject(logFile);
-		System.out.println(eventMap.size());
 		assertTrue(eventMap.size() == 0);
 	}
 
@@ -60,10 +59,9 @@ public class EventHelperTest {
 	 * seconds (1491377495222-1491377495218=4) =4 time duration is 4 seconds
 	 * (1491377495222-1491377495218=5)
 	 * 
-	 * @throws FileNotFoundException
 	 */
 	@Test
-	public void alertFalseTest() throws FileNotFoundException {
+	public void alertFalseTest() {
 		boolean flag;
 		flag = EventHelper.calculateTotalTimeTaken(1491377495218l, 1491377495216l, "scsmbstgrc", "APPLICATION_LOG",
 				"12345");
@@ -78,10 +76,9 @@ public class EventHelperTest {
 	 * second in below test , time duration is 5 seconds
 	 * (1491377495223-1491377495218=5)
 	 * 
-	 * @throws FileNotFoundException
 	 */
 	@Test
-	public void alertTrueTest() throws FileNotFoundException {
+	public void alertTrueTest() {
 		boolean flag = EventHelper.calculateTotalTimeTaken(1491377495223l, 1491377495218l, "scsmbstgrc",
 				"APPLICATION_LOG", "12345");
 		assertTrue(flag);
