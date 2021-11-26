@@ -1,11 +1,11 @@
-# eventlog
+# eventlogchallenge
 
 Software required to run the programme:
 Apache Maven 3.5.2
 Jdk 1.8
 
 Checkout git command:
-> git clone -b main https://github.com/tusharkharat0301/eventlog.git 
+> git clone -b main https://github.com/tusharkharat0301/eventlogchallenge.git
 
 Once checkout is done , Navigate to project and  run below commands 
 >mvn clean
