@@ -1,4 +1,4 @@
-package com.codingchallenge.vo;
+package com.codingchallenge.pojo;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

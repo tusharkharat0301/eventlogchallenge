@@ -1,4 +1,4 @@
-package com.codingchallenge.codingchallenge.service;
+package com.codingchallenge.eventlog.service;
 
 import static org.junit.Assert.assertTrue;
 

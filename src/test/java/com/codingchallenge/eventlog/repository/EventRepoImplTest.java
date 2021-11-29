@@ -1,4 +1,4 @@
-package com.codingchallenge.codingchallenge.repo;
+package com.codingchallenge.eventlog.repository;
 
 import static org.junit.Assert.assertTrue;
 
@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 import org.junit.Test;
 
-import com.codingchallenge.repo.EventRepoImpl;
+import com.codingchallenge.repository.EventRepoImpl;
 
 public class EventRepoImplTest {
 

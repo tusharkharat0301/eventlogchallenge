@@ -14,9 +14,9 @@ import org.apache.commons.io.LineIterator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.codingchallenge.pojo.Event;
 import com.codingchallenge.service.EventService;
 import com.codingchallenge.service.EventServiceImpl;
-import com.codingchallenge.vo.Event;
 import com.google.gson.Gson;
 
 public class EventHelper {

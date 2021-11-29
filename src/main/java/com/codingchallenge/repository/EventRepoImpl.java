@@ -1,4 +1,4 @@
-package com.codingchallenge.repo;
+package com.codingchallenge.repository;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

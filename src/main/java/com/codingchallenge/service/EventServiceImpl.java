@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.codingchallenge.repo.EventRepoImpl;
+import com.codingchallenge.repository.EventRepoImpl;
 import com.codingchallenge.utils.EventHelper;
 
 public class EventServiceImpl implements EventService {
